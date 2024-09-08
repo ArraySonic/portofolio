@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fadhlan Khalifah Portofolio</title>
+
+    <!-- Favicon - Css Link - Gfont Link -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- Main -->
+
+    <main>
+      <!-- Sidebar -->
+
+      <aside class="sidebar" data-sidebar>
+        <div class="sidebar-info">
+          <figure class="avatar-box">
+            <img
+              src="./assets/images/icon.png"
+              alt="Fadhlan Khalifah"
+              width="80"
+            />
+          </figure>
+
+          <div class="info-content">
+            <h1 class="name" title="Fadhlan Khalifah">Fadhlan Khalifah</h1>
+
+            <p class="title">Web developer | Graphic Designer</p>
+            <p class="title">Video Editor | Developer Server Game</p>
+          </div>
+
+          <button class="info_more-btn" data-sidebar-btn>
+            <span>Show Contacts</span>
+
+            <ion-icon name="chevron-down"></ion-icon>
+          </button>
+        </div>
+
+        <div class="sidebar-info_more">
+          <div class="separator"></div>
+
+          <ul class="contacts-list">
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Email</p>
+
+                <a
+                  href="mailto:muhammadfadhlan989@gmail.com"
+                  class="contact-link"
+                  >muhammadfadhlan989@gmail.com</a
+                >
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="phone-portrait-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Phone</p>
+
+                <a href="https://wa.me/6285183031447" class="contact-link"
+                  >+62 851-8308-1447</a
+                >
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="calendar-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Birthday</p>
+
+                <div class="contact-link" id="countdown"></div>
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Location</p>
+                <address>Banten, Tanggerang Selatan, Indonesia</address>
+              </div>
+            </li>
+          </ul>
+
+          <div class="separator"></div>
+
+          <ul class="social-list">
+            <li class="social-item">
+              <a href="https://wa.me/6285179702254" class="social-link">
+                <ion-icon name="logo-whatsapp"></ion-icon>
+              </a>
+            </li>
+
+            <li class="social-item">
+              <a href="https://github.com/ArraySonic" class="social-link">
+                <ion-icon name="logo-github"></ion-icon>
+              </a>
+            </li>
+
+            <li class="social-item">
+              <a href="https://instagram.com/lannfh_" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+      
+      <!-- Main Konten -->
+
+      <div class="main-content">
+
+        <!-- Nav -->
+
+        <nav class="navbar">
+          <ul class="navbar-list">
+            <li class="navbar-item">
+                <button class="navbar-link active" data-nav-link>Tentang Saya</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Resume</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Portofolio</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Blog</button>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- About -->
+
+        <article class="about active" data-page="tentang-saya">
+          <header>
+            <h2 class="h2 article-title">Tentang Saya</h2>
+          </header>
+
+          <section class="about-text">
+            <p>
+              Halo! Saya Fadhlan Khalifah, seorang Web Developer dan Server Developer pemula dari Indonesia. Saya memiliki pengalaman lebih dari 1 tahun dalam bidang pengembangan web dan server.
+               Saya ahli dalam merancang, mengembangkan, dan mengelola website serta server yang aman, cepat, dan scalable.
+            </p>
+            
+            <p>
+              Saya fokus membuat website yang fungsional, ramah pengguna, dan menarik. Selain itu, saya juga berpengalaman sebagai developer server Minecraft dan Growtopia,
+               serta sebagai video editor dan graphic designer.
+            </p>
+            
+          </section>
+
+          <!-- Service -->
+
+          <section class="service">
+            <h3 class="h3 service-title">Hal yang saya suka</h3>
+
+            <ul class="service-list">
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-design.svg
+                "
+                    alt="design icon"
+                    width="40"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Web design</h4>
+
+                  <p class="service-item-text">
+                    Membuat website dengan tampilan modern dan responsif.
+                    Tetapi saya masih pemula
+                  </p>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-dev.svg"
+                    alt="Web development icon"
+                    width="40"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Server development</h4>
+
+                  <p class="service-item-text">
+                    Saya juga pernah membangun server game contohnya Growtopia dan Minecraft
+                  </p>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-edit.svg"
+                    alt="video icon"
+                    width="40"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Video Grapher</h4>
+
+                  <p class="service-item-text">
+                    Nah saya juga pernah menjadi Video Grapher Disekolahan asal saya
+                  </p>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-photo.svg"
+                    alt="camera icon"
+                    width="40"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Photography</h4>
+
+                  <p class="service-item-text">
+                    Dan yang terakhir saya juga pernah menjadi fotografer untuk
+                    sebuah acara disekolahan
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </section>
+
+          <!-- Testimoni -->
+
+          <section class="testimonials">
+            <h3 class="h3 testimonials-title">Testimoni</h3>
+
+            <ul class="testimonials-list has-scrollbar">
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <figure class="testimonials-avatar-box">
+                    <img
+                      src="./assets/images/my-avatar.png"
+                      alt="Rudi - Idler"
+                      width="60"
+                      data-testimonials-avatar
+                    />
+                  </figure>
+
+                  <h4
+                    class="h4 testimonials-item-title"
+                    data-testimonials-title
+                  >
+                    Rudi - IdlerSMP
+                  </h4>
+
+                  <div class="testimonials-text" data-testimonials-text>
+                    <p>
+                      Sebagai pemilik Server Minecraft, saya selalu mencari
+                      layanan yang tidak hanya terjangkau tetapi juga handal.
+                      Saya sangat terkesan dengan provider yang dijual disini!
+                      Meskipun harganya sangat bersahabat, kualitasnya tidak
+                      kalah dengan yang lebih mahal. Uptime server selalu stabil
+                      dan kecepatan koneksi sangat memuaskan. Dukungan
+                      pelanggannya juga responsif dan membantu. Sangat
+                      direkomendasikan untuk siapa saja yang mencari solusi
+                      hosting berkualitas dengan anggaran terbatas.
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <figure class="testimonials-avatar-box">
+                    <img
+                      src="./assets/images/avatar-1.png"
+                      alt="Fuja - ZuftySMP"
+                      width="60"
+                      data-testimonials-avatar
+                    />
+                  </figure>
+
+                  <h4
+                    class="h4 testimonials-item-title"
+                    data-testimonials-title
+                  >
+                    Fuja - ZuftySMP
+                  </h4>
+
+                  <div class="testimonials-text" data-testimonials-text>
+                    <p>
+                      Setelah mencoba beberapa layanan hosting, akhirnya saya
+                      menemukan provider server ini yang menawarkan kualitas
+                      luar biasa dengan harga yang sangat terjangkau. Server
+                      saya kini berjalan lancar tanpa hambatan, dan saya tidak
+                      perlu khawatir tentang downtime lagi. Tim dukungannya
+                      sangat profesional dan selalu siap membantu kapan saja.
+                      Saya sangat puas dan akan terus menggunakan layanan ini
+                      untuk waktu yang lama.
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </section>
+
+          <div class="modal-container" data-modal-container>
+            <div class="overlay" data-overlay></div>
+
+            <section class="testimonials-modal">
+              <button class="modal-close-btn" data-modal-close-btn>
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
+
+              <div class="modal-img-wrapper">
+                <figure class="modal-avatar-box">
+                  <img
+                    src="./assets/images/avatar-1.png"
+                    alt="Rudi - IdlerSMP"
+                    width="80"
+                    data-modal-img
+                  />
+                </figure>
+
+                <img src="./assets/images/icon-quote.svg" alt="quote icon" />
+              </div>
+
+              <div class="modal-content">
+                <h4 class="h3 modal-title" data-modal-title>Rudi - IdlerSMP</h4>
+
+                <time datetime="2023-12-18">18 Desember, 2023</time>
+
+                <div data-modal-text>
+                  <p>
+                    Sebagai pemilik Server Minecraft, saya selalu mencari
+                      layanan yang tidak hanya terjangkau tetapi juga handal.
+                      Saya sangat terkesan dengan provider yang dijual disini!
+                      Meskipun harganya sangat bersahabat, kualitasnya tidak
+                      kalah dengan yang lebih mahal. Uptime server selalu stabil
+                      dan kecepatan koneksi sangat memuaskan. Dukungan
+                      pelanggannya juga responsif dan membantu. Sangat
+                      direkomendasikan untuk siapa saja yang mencari solusi
+                      hosting berkualitas dengan anggaran terbatas.
+                  </p>
+                </div>
+              </div>
+            </section>
+          </div>
+
+          <!-- Clients -->
+
+          <section class="clients">
+            <h3 class="h3 clients-title">Clients</h3>
+
+            <ul class="clients-list has-scrollbar">
+              <li class="clients-item">
+                  <img src="./assets/images/logo-idler.png" alt="client logo" />
+                </a>
+              </li>
+
+              <li class="clients-item-2">
+                  <img src="./assets/images/logo-zufty.png" alt="client logo" />
+                </a>
+              </li>
+            </ul>
+          </section>
+        </article>
+
+        <!-- Pendidikan -->
+
+        <article class="resume" data-page="resume">
+          <header>
+            <h2 class="h2 article-title">Resume</h2>
+          </header>
+
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+
+              <h3 class="h3">Education</h3>
+            </div>
+
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Sekolah Dasar (SD)
+                </h4>
+
+                <span>2016 — 2021</span>
+
+                <p class="timeline-text">
+                  Tidak ada yang benar-benar mencari kesenangan itu sendiri,
+                  menghadapi kesenangan yang ada, membaginya dan merusaknya,
+                  kecuali mereka yang mengalami rasa sakit dan ketidaknyamanan.
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Sekolah Menengah Pertama (SMP)
+                </h4>
+
+                <span>2021 — 2024</span>
+
+                <p class="timeline-text">
+                  Tidak ada yang benar-benar mencari kesenangan itu sendiri,
+                  menghadapi kesenangan yang ada, membaginya dan merusaknya,
+                  kecuali mereka yang mengalami rasa sakit dan ketidaknyamanan.
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Sekolah Menengah Kejuruan (SMK)
+                </h4>
+
+                <span>2024 — 2027</span>
+
+                <p class="timeline-text">
+                  Dengan alasan mengikuti kesenangan yang tidak diketahui,
+                  seseorang melakukan kesalahan yang mungkin dilakukan, semua
+                  kesenangan harus diterima sepenuhnya...
+                </p>
+              </li>
+            </ol>
+          </section>
+
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+
+              <h3 class="h3">Experience</h3>
+            </div>
+
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Server Developer</h4>
+
+                <span>2021 — Present</span>
+
+                <p class="timeline-text">
+                  Saya adalah seorang Pengembang Server untuk game Growtopia dan
+                  Minecraft. Saya memulai perjalanan saya sebagai Pengembang
+                  Server Game sejak tahun 2019 hingga sekarang. Kemampuan saya
+                  masih tergolong dasar.
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Video Editor</h4>
+
+                <span>2022 — Present</span>
+
+                <p class="timeline-text">
+                  Saya adalah seorang Editor, Saya memulai perjalanan saya dalam
+                  bidang editing sejak tahun 2019 hingga sekarang. Software yang
+                  pernah saya gunakan adalah Capcut, Alight Motion Dan
+                  Kinemaster. Kemampuan saya masih tergolong dasar.
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Web designer</h4>
+
+                <span>2023 — Present</span>
+
+                <p class="timeline-text">
+                  Saya mempelajari Web Developer secara otodidak, Dan saya
+                  mengikuti kursus di Coding Studio. Saya masih kurang
+                  bisa dalam mendesign suatu Website dikarenakan Kemampuan saya
+                  masih sangat dasar, Software yang biasa saya gunakan adalah
+                  Visual Studio Code.
+                  <br />
+                </p>
+              </li>
+            </ol>
+          </section>
+
+          <section class="skill">
+            <h3 class="h3 skills-title">Skill Yang Saya Miliki</h3>
+
+            <ul class="skills-list content-card">
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Web developer</h5>
+                  <data value="50">50%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 50%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Video Editor</h5>
+                  <data value="45">45%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 45%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Server Game Developer</h5>
+                  <data value="65">65%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 65%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Photography</h5>
+                  <data value="75">75%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 70%"></div>
+                </div>
+              </li>
+            </ul>
+          </section>
+        </article>
+
+        <!-- Portofolio -->
+
+        <article class="portofolio" data-page="portofolio">
+          <header>
+            <h2 class="h2 article-title">Portofolio</h2>
+          </header>
+
+          <section class="projects">
+            <ul class="filter-list">
+              <li class="filter-item">
+                <button class="active" data-filter-btn>All</button>
+              </li>
+
+              <li class="filter-item">
+                <button data-filter-btn>Web design</button>
+              </li>
+
+              <li class="filter-item">
+                <button data-filter-btn>Server development</button>
+              </li>
+            </ul>
+
+            <div class="filter-select-box">
+              <button class="filter-select" data-select>
+                <div class="select-value" data-selecct-value>
+                  Select category
+                </div>
+
+                <div class="select-icon">
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
+              </button>
+
+              <ul class="select-list">
+                <li class="select-item">
+                  <button data-select-item>All</button>
+                </li>
+
+                <li class="select-item">
+                  <button data-select-item>Web design</button>
+                </li>
+
+                <li class="select-item">
+                  <button data-select-item>Server development</button>
+                </li>
+              </ul>
+            </div>
+
+            <ul class="project-list">
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web design"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/project-1.png"
+                      alt="Simple Landing Page"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Simple Landing Page</h3>
+
+                  <p class="project-category">Web design</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web design"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/project-2.png"
+                      alt="Server Website"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Server Minecraft Website</h3>
+
+                  <p class="project-category">Web design</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="server development"
+              >
+                <a href="https://discord.gg/HgEKe4VhtT">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/project-3.png"
+                      alt="server"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">IdlerSMP Server</h3>
+
+                  <p class="project-category">Server development</p>
+                </a
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web design"
+              >
+                <a href="https://pteroxos.github.io/osisasqy.github.io/#home">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/project-4.png"
+                      alt="first time my website"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">First Time My Website</h3>
+
+                  <p class="project-category">Web design</p>
+                </a
+              </li>
+            </ul>
+          </section>
+        </article>
+
+        <!--
+        - #BLOG
+      -->
+
+        <article class="blog" data-page="blog">
+          <header>
+            <h2 class="h2 article-title">Blog</h2>
+          </header>
+
+          <section class="blog-posts">
+            <ul class="blog-posts-list">
+              <li class="blog-post-item">
+                <a href="https://github.com/ArraySonic/DATABASE">
+                  <figure class="blog-banner-box">
+                    <img
+                      src="./assets/images/blog-1.png"
+                      alt="Database Bot Whatsapp"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">Simple Database</p>
+
+                      <span class="dot"></span>
+
+                      <time datetime="2024-08-27">Aug 27, 2024</time>
+                    </div>
+
+                    <h3 class="h3 blog-item-title">
+                      Database Bot Whatsapp Sharen (Public)
+                    </h3>
+
+                    <p class="blog-text">
+                      Repository ini berisi database Sharen Bot WhatsApp! Proyek ini berisi file-file database seperti foto, 
+                      suara, dan video yang digunakan untuk bot WhatsApp.
+                    </p>
+                  </div>
+                </a>
+              </li>
+
+              <li class="blog-post-item">
+                <a href="https://github.com/ArraySonic/IdlerWeb-Official">
+                  <figure class="blog-banner-box">
+                    <img
+                      src="./assets/images/blog-2.png"
+                      alt="Website Templater"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">Website Template</p>
+
+                      <span class="dot"></span>
+
+                      <time datetime="2024-05-18">May 18, 2024</time>
+                    </div>
+
+                    <h3 class="h3 blog-item-title">
+                      Minecraft Server Website Template (Private)
+                    </h3>
+
+                    <p class="blog-text">
+                      Simple Minecraft Server Website Template, Untuk sekarang masih tahap
+                      pengembangan agar responsif di semua device.
+                    </p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </article>
+
+        <!--
+        - #CONTACT
+      -->
+
+        <article class="contact" data-page="contact">
+          <header>
+            <h2 class="h2 article-title">My Location</h2>
+          </header>
+
+          <section class="mapbox" data-mapbox>
+            <figure>
+              <iframe
+              < src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d247.8519589140398!2d106.72956542252996!3d-6.3120657502699355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69eb2a42a32353%3A0x7f640ebe10aad0d3!2sIbrasya%20Corner!5e0!3m2!1sen!2sid!4v1721701063407!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </figure>
+          </section>
+
+          <section class="contact-form">
+            <!-- <h3 class="h3 form-title">Contact Form</h3>
+
+            <form action="#" class="form" data-form>
+              <div class="input-wrapper">
+                <input
+                  type="text"
+                  name="fullname"
+                  class="form-input"
+                  placeholder="Full name"
+                  required
+                  data-form-input
+                />
+
+                <input
+                  type="email"
+                  name="email"
+                  class="form-input"
+                  placeholder="Email address"
+                  required
+                  data-form-input
+                />
+              </div>
+
+              <textarea
+                name="message"
+                class="form-input"
+                placeholder="Your Message"
+                required
+                data-form-input
+              ></textarea>
+
+              <button class="form-btn" type="submit" disabled data-form-btn>
+                <ion-icon name="paper-plane"></ion-icon>
+                <span>Send Message</span>
+              </button>
+            </form>
+          </section>
+        </article>
+      </div> -->
+    </main>
+
+    <!--
+    - custom js link
+  -->
+    <script src="./assets/js/script.js"></script>
+
+    <!--
+    - ionicon link
+  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

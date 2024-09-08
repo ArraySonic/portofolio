@@ -1,0 +1,277 @@
+/*Fuentes de tipografia*/
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600|Raleway:400,600&display=swap");
+
+/* VARIABLES CSS */
+/*Header*/
+:root {
+  --header-height: 3rem;
+}
+/*Colores*/
+:root {
+  --color-first: #4cb0ea;
+  --color-secondary: #0e2cb3;
+  --color-text: #fff;
+}
+/*Fuente y tipografia*/
+:root {
+  --heading-font: "Raleway";
+  --body-font: "Open Sans";
+  --h1-font-size: 2rem;
+  --h3-font-size: 1rem;
+  --small-font-size: 0.8125rem;
+}
+@media screen and (min-width: 768px) {
+  :root {
+    --h1-font-size: 3.5rem;
+    --h3-font-size: 1.25rem;
+    --small-font-size: 0.8125rem;
+  }
+}
+/* z-index*/
+:root {
+  --z-back: -10;
+  --z-normal: 1;
+  --z-tooltip: 10;
+  --z-fixed: 100;
+  --z-modal: 1000;
+}
+
+/* BASE */
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: var(--header-height) 0 0 0;
+  color: var(--color-text);
+  background-color: var(--color-secondary);
+  font-family: var(--body-font);
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+h1 {
+  font-size: var(--h1-font-size);
+  font-family: var(--heading-font);
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* LAYAOUT */
+.bd-grid {
+  display: grid;
+  grid-template-columns: 100%;
+  max-width: 1200px;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  align-items: center;
+}
+.l-header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: var(--color-secondary);
+}
+/* COMPONENTS */
+.button {
+  display: inline-block;
+  padding: 0.5rem 1.5rem;
+  margin-bottom: 1rem;
+  background-color: var(--color-first);
+  color: var(--color-text);
+  border-radius: 1.5rem;
+}
+.button:hover {
+  box-shadow: 2px 0 24px var(--color-first);
+  transition: 0.5s;
+}
+
+/* PAGES */
+.home {
+  position: relative;
+  z-index: var(
+    --z-normal
+  ); /* Pastikan z-index lebih tinggi dari #particles-js */
+  height: calc(100vh - var(--header-height));
+}
+
+.nav {
+  height: var(--header-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .nav__menu {
+    position: fixed;
+    top: var(--header-height);
+    right: -100%;
+    width: 60%;
+    height: 100vh;
+    padding: 1.5rem;
+    background-color: var(--color-secondary);
+    z-index: var(--z-fixed);
+    transition: 0.5s;
+    border-top: 1px solid var(--color-text);
+    border-left: 1px solid var(--color-text);
+  }
+}
+.nav__item {
+  margin-bottom: 1.5rem;
+}
+.nav__link {
+  color: var(--color-text);
+}
+.nav__link:hover {
+  border-bottom: 1px solid var(--color-text);
+}
+.nav__icon {
+  font-size: 1.5rem;
+}
+.menu-toggle {
+  cursor: pointer;
+}
+
+/*Aparece menu*/
+.show {
+  right: 0;
+}
+
+/*Home*/
+.home__data {
+  padding-top: 2rem;
+  text-align: center;
+}
+.home__title {
+  margin-bottom: 0.5rem;
+  color: var(--color-first);
+}
+.home__name {
+  display: block;
+  margin-bottom: 1.5rem;
+  font-size: var(--h3-font-size);
+}
+/* Untuk layar kecil (ponsel) */
+.home__social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem; /* Jarak antara tombol dan ikon */
+  transform: translateX(14px); /* Geser lebih jauh ke kanan */
+}
+
+.home__social-icon {
+  margin-right: 2rem; /* Tambah jarak antar ikon di ponsel */
+  color: var(--color-text);
+  z-index: var(--z-back);
+  transform: scale(1.7) translateY(10px); /* Memperbesar 70% dan geser sedikit ke bawah */
+}
+
+/* Media query untuk desktop */
+@media screen and (min-width: 768px) {
+  .home__social {
+    justify-content: flex-start; /* Letakkan di bawah tombol pada desktop */
+    margin-top: 2rem; /* Tambah jarak antara tombol dan ikon di desktop */
+    margin-right: 0; /* Hapus margin tambahan */
+    transform: translateX(0); /* Kembalikan posisi normal di desktop */
+  }
+
+  .home__social-icon {
+    margin-right: 3rem; /* Beri jarak antar ikon di desktop */
+    transform: scale(1.7) translateY(0); /* Posisi normal di desktop */
+  }
+  .home__social-icon {
+    transform: scale(1.7) translateY(0); /* Sesuaikan posisi di desktop */
+  }
+}
+
+.home__img {
+  padding: 2rem;
+}
+
+/*MEDIA QUERIES*/
+@media screen and (min-width: 768px) {
+  body {
+    margin: 0;
+  }
+  .home {
+    height: 100vh;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .button {
+    margin-bottom: 3rem;
+  }
+  .nav__list {
+    display: flex;
+  }
+  .nav__item {
+    margin-bottom: 0;
+    margin-left: 1.5rem;
+  }
+  .menu-toggle {
+    display: none;
+  }
+  .home__data {
+    padding: 0;
+    text-align: initial;
+  }
+  .home__social-icon {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .bd-grid {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: var(--z-back); /* Pastikan z-index lebih rendah dari elemen lain */
+  background-color: var(
+    --color-secondary
+  ); /* Gunakan warna dari variabel CSS */
+}
+
+.typing-animation {
+  overflow: hidden; /* hide the overflow to create a typing effect */
+  white-space: nowrap; /* keep the text on one line */
+  border-right: 2px solid #ffffff; /* add a cursor effect */
+  width: 0; /* start with no width */
+  font-weight: bold; /* make the font bold */
+  font-size: 1.3em; /* make the font a little bigger */
+}
+
+.cursor {
+  animation: blink 1s infinite;
+  font-weight: bold; /* make the cursor bold */
+  font-size: 1.2em; /* make the cursor a little bigger */
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

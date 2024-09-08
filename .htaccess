@@ -1,0 +1,9 @@
+RewriteEngine On
+
+# Hide .html extensions
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.html [NC,L]
+
+# Remove URL hashes
+RewriteCond %{REQUEST_URI} ^(.*)#(.*)$
+RewriteRule . %1 [R=301,L]

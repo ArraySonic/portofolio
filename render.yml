@@ -1,7 +1,0 @@
-services:
-  - type: web
-    name: my-render-app
-    env: node
-    buildCommand: npm install && npm run build
-    startCommand: npm start
-    port: 3000

@@ -1,0 +1,11 @@
+{
+  "name": "my-render-app",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node index.js",
+    "build": "npm run build"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

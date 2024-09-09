@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: express-backend
+    env: node
+    build:
+      context: .
+      docker:
+        - node:14
+    port: 8080
+    healthCheck:
+      path: /
